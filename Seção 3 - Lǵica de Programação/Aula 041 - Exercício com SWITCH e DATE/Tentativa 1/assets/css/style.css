@@ -1,0 +1,19 @@
+body {
+    font: 15pt Arial;
+    font-weight: bolder;
+    text-align: center;
+    background: rgb(73, 16, 165);
+}
+
+#container {
+    background: #fff;
+    width: 500px;
+    margin: 100px auto;
+    display: block;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#container:hover {
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
