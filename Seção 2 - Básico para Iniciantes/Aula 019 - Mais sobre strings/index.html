@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        let umaString0 = "Um \"texto\""; // Utilizamos a BARRA INVERTIDA como caracter de escape.
+            document.write(`${umaString0}<br/><br/>`)
+
+        // No Javascript as STRINGS são indexadas.
+        //               01234567
+        let umaString1 = "Um texto"
+            document.write(`${umaString1[4]}<br/><br/>`) // Caracter do índice 4
+        
+        //Pegando o elemento de determinada posição
+        let umaString2 = "Um texto"
+            document.write(`${umaString2.charAt(3)}<br/><br/>`)
+
+        // Pegando o código na tabela ASCI referente ao elemento
+        let umaString3 = "Um texto"
+            document.write(`${umaString3.charCodeAt(1)}<br/><br/>`)
+        
+        // Em qual índice começa a palavra
+        let umaString4 = "Um texto"
+            document.write(`${umaString4.indexOf('texto')}<br/><br/>`)
+        
+        // 
+        let umaString5 = "Um texto"
+            document.write(`${umaString5.lastIndexOf('m', 3)}<br/><br/>`)
+
+        // Expressão Regular ( REGEX )
+        let umaString6 = "Um texto"
+            document.write(`${umaString6.match(/[a-z]/g)}<br/><br/>`)
+
+        // Busca o índice da string
+        let umaString7 = "Um texto"
+            document.write(`${umaString6.search(/[t]/)}<br/><br/>`)
+
+        // Substituindo uma palavra ou string por outra
+        let umaString8 = "Um texto"
+            document.write(`${umaString8.replace('Um', 'Um belo')}<br/><br/>`)
+
+        let umaString9 = "O rato roeu a rouṕa do reu de roma."
+            document.write(`${umaString9.replace(/r/g, '8===D')}<br/><br/>`)
+        
+        // Descobrindo quantos caracteres tem
+        let umaString10 = "O rato roeu a rouṕa do reu de roma."
+            document.write(`${umaString10.length}<br/><br/>`)
+
+        // Fateando uma string
+        let umaString11 = "O rato roeu a rouṕa do reu de roma."
+            document.write(`${umaString11.slice(2, 6)}<br/><br/>`)
+            document.write(`${umaString11.substring(umaString11.length - 2, umaString11.length - 6)}<br/><br/>`)
+
+        // Separando
+        let umaString12 = "O rato roeu a rouṕa do reu de roma."
+            document.write(`${umaString12.split('', 6)}<br/><br/>`)
+
+        // Tudo MAIUSCULO
+        let umaString13 = "O rato roeu a rouṕa do reu de roma."
+            document.write(`${umaString13.toUpperCase()}<br/><br/>`)
+    </script>
+</body>
+</html>
